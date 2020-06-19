@@ -19,3 +19,20 @@ sudo bash oh-my-zsh-install.sh
     * git
     * zsh-autosuggestions
     * zsh-syntax-highlighting
+
+3. My `.vimrc`
+* Prerequisite:
+    * space-vim (installation see: [liuchengxu/space-vim](https://github.com/liuchengxu/space-vim))
+* PlugIns:
+```
+[Layer]
+let g:spacevim_layers = [
+      \ 'fzf', 'better-defaults', 'which-key', 'auto-completion', 'emoji', 'c-c++', 'python', 'markdown', 'formatting', 'airline', 'file-manager',
+      \'programming', 'ctags', 'editing', 'git']
+
+[User Init]
+Plug 'junegunn/seoul256.vim'
+Plug 'ncm2/ncm2-jedi'
+Plug 'skywind3000/vim-quickui'
+Plug 'skywind3000/asynctasks.vim'
+```
