@@ -12,10 +12,10 @@ sudo bash oh-my-zsh-install.sh
 ```
 
 2. My `.zshrc`
-Prerequisite:
+* Prerequisite:
     * Powerline9K (installation see: [Powerline9K](https://github.com/Powerlevel9k/powerlevel9k/wiki/Install-Instructions) )
     * figlet (`brew install figlet`)
-PlugIns:
+* PlugIns:
     * git
     * zsh-autosuggestions
     * zsh-syntax-highlighting
