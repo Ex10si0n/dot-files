@@ -23,7 +23,10 @@ sudo bash oh-my-zsh-install.sh
 3. My `.vimrc`
 * Prerequisite:
     * space-vim (installation see: [liuchengxu/space-vim](https://github.com/liuchengxu/space-vim))
+    * ctags (`brew install ctags`)
 * PlugIns:
+    * NerdTree
+    * Tagbar
 ```
 [Layer]
 let g:spacevim_layers = [
@@ -35,4 +38,8 @@ Plug 'junegunn/seoul256.vim'
 Plug 'ncm2/ncm2-jedi'
 Plug 'skywind3000/vim-quickui'
 Plug 'skywind3000/asynctasks.vim'
+```
+* KeyBoard Map
+```
+inoremap jk <Esc>
 ```
