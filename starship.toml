@@ -1,0 +1,74 @@
+[character]
+success_symbol = "[](bold green) "
+error_symbol = "[](bold red) "
+vicmd_symbol = "[](bold cyan)"
+
+[conda]
+symbol = ""
+format = "via [$symbol $environment](bold green) "
+
+[directory]
+format = "at [$path]($style)[$read_only]($read_only_style) "
+truncation_length = 20
+truncation_symbol = "…/"
+read_only = " "
+home_symbol = " "
+
+[directory.substitutions]
+"/Library/Mobile Documents/com~apple~CloudDocs" = "/ iCloud"
+
+[git_branch]
+symbol = " "
+truncation_symbol = ""
+
+[git_commit]
+tag_symbol = " "
+
+[git_status]
+format = "[[($untracked$modified$staged$renamed$conflicted$deleted)](red)($ahead_behind$stashed)]($style)"
+style = "purple"
+conflicted = " "
+untracked = " "
+modified = " "
+staged = " "
+renamed = "凜"
+deleted = "﫧"
+stashed = "≡ "
+ahead = " "
+behind = " "
+diverged = " "
+ 
+[username]
+style_user = "yellow bold"
+style_root = "red bold"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+ 
+[hostname]
+ssh_only = false
+format =  "on [$hostname](bold red) "
+trim_at = ".companyname.com"
+disabled = false
+
+[java]
+style = "red bold"
+symbol = " "
+
+[nodejs]
+format = "via [$symbol($version )]($style)"
+symbol = " "
+
+[package]
+format = "with [ $version](208 bold) "
+
+[python]
+symbol = " "
+style = "green bold"
+pyenv_version_name = false
+
+[swift]
+symbol = "ﯣ "
+
+[golang]
+symbol = " "

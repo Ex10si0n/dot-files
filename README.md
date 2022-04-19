@@ -3,10 +3,10 @@
 This is a repo of my dotfiles backup.
 
 ## Platform
-> Full compability on macOS
+> Full compability on macOS Monterey
 
 ## Includes
-1. Optimization of oh my zsh installation in MainLand China.
+1. Optimization of oh my zsh installation in China.
 ```bash
 sudo bash oh-my-zsh-install.sh
 ```
@@ -25,20 +25,40 @@ sudo bash oh-my-zsh-install.sh
     * space-vim (installation see: [liuchengxu/space-vim](https://github.com/liuchengxu/space-vim))
     * ctags (`brew install ctags`)
 * PlugIns:
-    * NerdTree
-    * Tagbar
-```
-[Layer]
-let g:spacevim_layers = [
-      \ 'fzf', 'better-defaults', 'which-key', 'auto-completion', 'emoji', 'c-c++', 'python', 'markdown', 'formatting', 'airline', 'file-manager',
-      \'programming', 'ctags', 'editing', 'git']
+```bash
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'mhinz/vim-startify'
+Plugin 'Yggdroot/indentLine'
 
-[User Init]
-Plug 'junegunn/seoul256.vim'
-Plug 'ncm2/ncm2-jedi'
-Plug 'skywind3000/vim-quickui'
-Plug 'skywind3000/asynctasks.vim'
+" Completitions
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'github/copilot.vim'
+
+" Visual
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Usability
+Plugin 'preservim/nerdtree'
+Plugin 'preservim/tagbar'
+Plugin 'tpope/vim-surround'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'godlygeek/tabular'
+Plugin 'junegunn/fzf'
+
+" Zen Mode (Goyo)
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
+
+" Colorschemes
+Plugin 'liuchengxu/space-vim-dark'
+Plugin 'jdsimcoe/abstract.vim'
+Plugin 'phanviet/vim-monokai-pro'
+Plugin 'preservim/vim-colors-pencil'
+Plugin 'sonph/onehalf', { 'rtp': 'vim' }
 ```
+
 * KeyBoard Map
 ```
 inoremap jk <Esc>
